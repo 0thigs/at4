@@ -1,0 +1,132 @@
+/* App.css */
+
+/* Definir cores e fontes */
+:root {
+  --primary-bg-color: #121212; /* Cor de fundo escura */
+  --secondary-bg-color: #1e1e1e; /* Cor secundária de fundo */
+  --text-color: #e0e0e0; /* Cor do texto */
+  --button-bg-color: #6200ea; /* Cor de fundo do botão */
+  --button-hover-bg-color: #3700b3; /* Cor de fundo do botão ao passar o mouse */
+  --border-color: #333; /* Cor das bordas */
+  --input-bg-color: #333; /* Cor de fundo dos inputs */
+  --input-text-color: #e0e0e0; /* Cor do texto nos inputs */
+  --table-header-bg-color: #333; /* Cor do cabeçalho da tabela */
+  --table-row-hover-bg-color: #444; /* Cor de fundo das linhas da tabela ao passar o mouse */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: var(--secondary-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+}
+
+input:focus, select:focus, button:focus {
+  outline: none;
+  border-color: #6200ea;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid var(--border-color);
+}
+
+table th {
+  background-color: var(--table-header-bg-color);
+}
+
+table tr:hover {
+  background-color: var(--table-row-hover-bg-color);
+}
+
+ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+ul li {
+  background-color: var(--secondary-bg-color);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error, .loading {
+  color: #ff4081;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}

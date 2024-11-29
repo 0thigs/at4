@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+  "build": {
+    "dependsOn": ["^build"],
+    "outputs": ["dist/**", "build/**", "target/**"]
+  },
+    "dev:web": {
+      "inputs": ["apps/web/**/*.{js,jsx,ts,tsx,json}"],
+      "outputs": [],
+      "cache": false,
+      "persistent": true
+    },
+    "dev:backend": {
+      "inputs": ["apps/back/**/*"],
+      "outputs": [],
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
